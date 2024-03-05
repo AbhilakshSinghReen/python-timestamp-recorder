@@ -2,9 +2,13 @@ from datetime import timedelta
 
 
 def convert_timestamp(seconds):
-    time_format = str(timedelta(seconds=seconds))
+    formatted_time = str(timedelta(seconds=seconds))
 
-    if '.' in time_format:
-        time_format = time_format.split('.')[0]
+    milliseconds = int((seconds % 1) * 1000)
 
-    return time_format
+    if '.' in formatted_time:
+        formatted_time = formatted_time.split('.')[0]
+    
+    formatted_time = f"{formatted_time}.{milliseconds:03d}"
+
+    return formatted_time

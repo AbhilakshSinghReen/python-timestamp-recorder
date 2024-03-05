@@ -1,50 +1,38 @@
 [
     {
         "type": "START",
-        "endTimestamp": 1709651769.3931322
+        "endTimestamp": 1709652006.489356
     },
     {
         "type": "KEEP",
-        "endTimestamp": 1709651773.904682
+        "endTimestamp": 1709652008.225131
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709652012.2337048
     },
     {
         "type": "DISCARD",
-        "endTimestamp": 1709651779.1132357
-    },
-    {
-        "type": "KEEP",
-        "endTimestamp": 1709651790.8733356
-    },
-    {
-        "type": "KEEP",
-        "endTimestamp": 1709651793.5606303
-    },
-    {
-        "type": "KEEP",
-        "endTimestamp": 1709651794.9685524
-    },
-    {
-        "type": "KEEP",
-        "endTimestamp": 1709651795.7286608
-    },
-    {
-        "type": "KEEP",
-        "endTimestamp": 1709651795.9042203
-    },
-    {
-        "type": "KEEP",
-        "endTimestamp": 1709651796.0964901
-    },
-    {
-        "type": "KEEP",
-        "endTimestamp": 1709651796.2720973
+        "endTimestamp": 1709652019.4013836
     },
     {
         "type": "DISCARD",
-        "endTimestamp": 1709651799.1854591
+        "endTimestamp": 1709652022.7686543
     },
     {
         "type": "DISCARD",
-        "endTimestamp": 1709651806.8972826
+        "endTimestamp": 1709652024.5766137
+    },
+    {
+        "type": "DISCARD",
+        "endTimestamp": 1709652025.721133
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709652026.9849916
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709652028.4970481
     }
 ]
