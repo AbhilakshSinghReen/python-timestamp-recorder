@@ -1,5 +1,5 @@
 from json import dump as json_dump, load as json_load
-from os.path import dirname, join
+from os.path import dirname, exists, join
 from time import time
 
 from pynput.keyboard import Key, Listener
@@ -15,8 +15,25 @@ DISCARD_SEGMENT_KEY = Key.f12
 class TimestampRecorder:
     def __init__(self):
         self.segments_json_file_path = join(dirname(__file__), "segments.json")
+        
+        if not exists(self.segments_json_file_path):
+            self.create_empty_segments_file()
 
+        if self.get_num_existing_segments() > 0:
+            print("One or more segments already exist in the segments file. Cannot write a START segment. Exiting...")
+            exit(1)
+        
         self.start_timestamp = None
+
+    def create_empty_segments_file(self):
+        with open(self.segments_json_file_path, 'w') as segments_json_file:
+            json_dump([], segments_json_file, indent=4)
+
+    def get_num_existing_segments(self):
+        with open(self.segments_json_file_path, 'r') as segments_json_file:
+            segments =  json_load(segments_json_file)
+        
+        return len(segments)
 
     def add_segment_to_json_file(self, segment_type, timestamp):
         with open(self.segments_json_file_path, 'r') as segments_json_file:
