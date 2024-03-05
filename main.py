@@ -1,21 +1,23 @@
 from json import dump as json_dump, load as json_load
-from os.path import dirname, exists, join
+from os.path import exists
 from time import time
 
-from pynput.keyboard import Key, Listener
+from pynput.keyboard import Listener
 
+from config import (
+    DISCARD_SEGMENT_KEY,
+    KEEP_SEGMENT_KEY,
+    START_KEY,
+    STOP_RECORDING_KEY,
+    SEGMENTS_JSON_FILE_PATH,
+)
 from utils import convert_timestamp
-
-
-START_KEY = Key.f10
-KEEP_SEGMENT_KEY = Key.f11
-DISCARD_SEGMENT_KEY = Key.f12
 
 
 class TimestampRecorder:
     def __init__(self):
-        self.segments_json_file_path = join(dirname(__file__), "segments.json")
-        
+        self.segments_json_file_path = SEGMENTS_JSON_FILE_PATH
+
         if not exists(self.segments_json_file_path):
             self.create_empty_segments_file()
 
