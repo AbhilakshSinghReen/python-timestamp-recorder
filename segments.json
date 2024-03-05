@@ -1,0 +1,50 @@
+[
+    {
+        "type": "START",
+        "endTimestamp": 1709651769.3931322
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651773.904682
+    },
+    {
+        "type": "DISCARD",
+        "endTimestamp": 1709651779.1132357
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651790.8733356
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651793.5606303
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651794.9685524
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651795.7286608
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651795.9042203
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651796.0964901
+    },
+    {
+        "type": "KEEP",
+        "endTimestamp": 1709651796.2720973
+    },
+    {
+        "type": "DISCARD",
+        "endTimestamp": 1709651799.1854591
+    },
+    {
+        "type": "DISCARD",
+        "endTimestamp": 1709651806.8972826
+    }
+]
